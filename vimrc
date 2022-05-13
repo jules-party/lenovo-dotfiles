@@ -9,5 +9,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/AutoComplPop'
+Plug 'dag/vim-fish'
 call plug#end()
 colorscheme wal

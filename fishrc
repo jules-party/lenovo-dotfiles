@@ -1,0 +1,8 @@
+#!/bin/fish
+set fish_greeting
+
+alias ls "lsd"
+alias ll "lsd -l"
+alias la "lsd -A"
+
+sh -c "$(export FZF_DEFAULT_OPTS=' --height 13')"

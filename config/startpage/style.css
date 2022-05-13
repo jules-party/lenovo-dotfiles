@@ -1,0 +1,113 @@
+@value --color0 from "./colors.css";
+@value --color1 from "./colors.css";
+@value --color2 from "./colors.css";
+@value --color0 from "./colors.css";
+@value --color4 from "./colors.css";
+@value --color5 from "./colors.css";
+@value --color6 from "./colors.css";
+@value --color7 from "./colors.css";
+@value --color8 from "./colors.css";
+@value --color9 from "./colors.css";
+@value --color10 from "./colors.css";
+@value --color11 from "./colors.css";
+@value --color12 from "./colors.css";
+@value --color13 from "./colors.css";
+@value --color14 from "./colors.css";
+@value --color15 from "./colors.css";
+@font-face { font-family: "Sarasa Gothic K"; src: url("./assets/sarasa-gothic-k-regular.ttf"); }
+@font-face { font-family: "Sarasa Gothic K Bold"; src: url("./assets/sarasa-gothic-k-semibold.ttf"); }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: var(--color0);
+	color: var(--color15);
+	font-family: "Sarasa Gothic K";
+}
+
+* {
+	cursor: normal;
+	user-select: none;
+}
+
+h1 {
+	margin: 0;
+	font-family: "Sarasa Gothic K Bold";
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+.term {
+	width: 500px;
+	padding: 16px;
+	position: relative;
+	border-radius: 8px;
+	background-color: var(--color8);
+}
+
+.term::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #0d1216;
+	z-index: -2;
+	border-radius: 8px;
+}
+
+h3 {
+	font-size: 14px;
+	font-family: "Sarasa Gothic K Bold"; 
+	margin: 0 0 8px 0;
+}
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.columns .column {
+	display: inline-block;
+}
+
+.columns .column * {
+	display: block;
+}
+
+a {
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+	color: var(--color15);
+	position: relative;
+	padding: 0;
+	transition: padding .3s;
+}
+
+a:hover {
+	padding-left: 15px;
+}
+
+a::before {
+	content: '>';
+	position: absolute;
+	left: -20px;
+	opacity: 0;
+	transform: scaleX(0);
+	transition-property: left, transform, opacity;
+	transition-duration: .3s;
+}
+
+a:hover::before {
+	left: 0px;
+	transform: scaleX(1);
+	opacity: 1;
+}
