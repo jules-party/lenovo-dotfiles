@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# script to easily copy my dots to my local repo
+
 read -p ":: Copy all dotfiles to this repo? [Y/n]  " start
 case $start in ([Nn]|[Nn][Oo]) exit 0 ; esac
 
