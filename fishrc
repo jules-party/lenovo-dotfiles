@@ -1,8 +1,25 @@
-#!/bin/fish
+#!/usr/bin/env fish
+
+#
+# ~/.fishrc
+#
+
+fm6000 -alice -n
 set fish_greeting
+set fish_color_command white
 
 alias ls "lsd"
 alias ll "lsd -l"
 alias la "lsd -A"
+
+alias gcl "git clone"
+
+sh -c "$(export fg=$(cat ~/.cache/wal/colors | awk 'NR==8'))"
+sh -c '$(export wlan_polybar="%{A1:~/.config/rofi/rofi-wifi-menu.sh:} %{F$fg}%essid%%{F-}%{A}")'
+
+function fish_title
+    set -q argv[1]; or set argv fish
+    echo (fish_prompt_pwd_dir_length=1 prompt_pwd): $argv;
+end
 
 sh -c "$(export FZF_DEFAULT_OPTS=' --height 13')"

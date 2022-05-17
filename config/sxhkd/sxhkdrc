@@ -7,7 +7,20 @@ super + Return
 	kitty
 
 # program launcher
+
+super + w
+        rofi -show window
+
+super + shift + c
+        rofi -show calc
+
+super + shift + e
+        rofi -show emoji
+
 super + d
+        rofi -show run -show-icons
+
+super + @space
         rofi -modi drun -show drun -show-icons
  
 super + r
@@ -40,7 +53,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }w
+super + shift + w
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout

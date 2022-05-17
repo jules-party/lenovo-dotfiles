@@ -1,8 +1,6 @@
 #!/bin/sh
 
-# script to easily copy my dots to my local repo
-
-read -p ":: Copy all dotfiles to this repo? [Y/n]  " start
+read -p ":: Copy all dotfiles to this repo? [Y/n] " start
 case $start in ([Nn]|[Nn][Oo]) exit 0 ; esac
 
 printf "\ncopying dotfiles to repo...\n"
@@ -13,6 +11,7 @@ cp ~/.xinitrc ~/.my-repos/dotfiles/xinitrc
 
 printf "\ncopying config folders to repo...\n"
 
+cp -r ~/.config/rofi      ~/.my-repos/dotfiles/config/
 cp -r ~/.config/bspwm     ~/.my-repos/dotfiles/config/
 cp -r ~/.config/dunst     ~/.my-repos/dotfiles/config/
 cp -r ~/.config/kitty     ~/.my-repos/dotfiles/config/
@@ -26,7 +25,7 @@ printf "\ncopying wallpapers folder to repo...\n"
 rm -rf ~/.my-repos/dotfiles/wallpapers/*
 cp ~/.wallpapers/* ~/.my-repos/dotfiles/wallpapers/
 
-read -p ":: Add files to future commit [Y/n]  " git_add
+read -p ":: Add files to future commit? [Y/n] " git_add
 
 case "$git_add" in ([Yy]|[Yy][Ee][Ss]) cd ~/.my-repos/dotfiles; git add .; printf "\nFinished!\n" ; esac
 case "$git_add" in ([Nn]|[Nn][Oo]) printf "\nFinished!\n"; exit 0 ; esac

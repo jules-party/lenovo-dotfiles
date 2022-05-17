@@ -10,5 +10,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'dag/vim-fish'
+Plug 'Fymyte/rasi.vim'
 call plug#end()
 colorscheme wal
