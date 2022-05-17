@@ -82,6 +82,9 @@ h3 {
 	display: block;
 }
 
+/* Id's */
+
+
 a {
 	font-size: 14px;
 	font-weight: normal;
@@ -92,12 +95,25 @@ a {
 	transition: padding .3s;
 }
 
+#searchbar {
+	background-color: var(--color8);
+        border-radius: 8px;
+	color: var(--color15);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0px;
+	border: none;
+	outline: none;
+}	
+
 a:hover {
 	padding-left: 15px;
 }
 
 a::before {
-	content: '>';
+	content: '❤';
 	position: absolute;
 	left: -20px;
 	opacity: 0;

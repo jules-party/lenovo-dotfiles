@@ -7,12 +7,19 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='colors.css'>
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/search.js"></script>
+    <script>
+      window.onload() = function() {
+	document.getElementById("searchbar").focus();
+      }
+    </script>
 </head>
 <body>
     <div class="center">
-        <h1 id="time">
-        </h1>
+	<input id="searchbar" autocomplete="off" type="text" autofocus="" onkeydown="search(event)" placeholder="> Search" autofocus>
+	<h1 id="time">
+	</h1>
 
         <div class="term">
             <div class="columns">
