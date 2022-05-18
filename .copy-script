@@ -6,8 +6,8 @@ case $start in ([Nn]|[Nn][Oo]) exit 0 ; esac
 printf "\ncopying dotfiles to repo...\n"
 
 cp ~/.vimrc   ~/.my-repos/dotfiles/vimrc
-cp ~/.fishrc  ~/.my-repos/dotfiles/fishrc
 cp ~/.xinitrc ~/.my-repos/dotfiles/xinitrc
+cp ~/.config/fish/config.fish ~/.my-repos/dotfiles/fishrc
 
 printf "\ncopying config folders to repo...\n"
 
