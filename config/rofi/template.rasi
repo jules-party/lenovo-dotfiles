@@ -1,14 +1,14 @@
-configuration {
+configuration {{
   display-drun: "Apps";
   display-run: "走:";
   display-window: "窓:";
   font: "Sarasa Gothic K Regular 10";
   modi: "window,run,drun,emoji,calc";
-}
+}}
 
 @theme "/dev/null"
 
-* {
+* {{
   bg: {color0};
   fg: {color7};
   bg-alt: {color8};
@@ -21,59 +21,59 @@ configuration {
   margin:  0;
   padding: 0;
   spacing: 0;
-}
+}}
 
-window {
+window {{
    height: 35%;
    width:  30%;
    background-color: @bg;
-}
+}}
 
-element {
+element {{
    padding: 8 0;
    text-color: @fg-alt;
-}
+}}
 
-element selected {
+element selected {{
    text-color: @fg;
-}
+}}
 
-element-text {
+element-text {{
    background-color: inherit;
    text-color: inherit;
    vertical-align: 0.5;
-}
+}}
 
-element-icon {
+element-icon {{
    size: 30;
    padding: 0 3;
-}
+}}
 
-entry {
+entry {{
    background-color: @bg-alt;
    padding: 12;
    text-color: @fg;
-}
+}}
 
-inputbar {
+inputbar {{
    children: [prompt, entry];
-}
+}}
 
-listview {
+listview {{
   padding: 8 12;
   background-color: @bg;
   columns: 1;
   lines: 8;
-}
+}}
 
-mainbox {
+mainbox {{
   background-color: @bg;
   children: [inputbar, listview];
-}
+}}
 
-prompt {
+prompt {{
   background-color: @bg-alt;
   enabled: true;
   padding: 12 0 0 12;
   text-color: @fg;
-}
+}}

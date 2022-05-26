@@ -58,7 +58,7 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #0d1216;
+	background-color: var(--color8);
 	z-index: -2;
 	border-radius: 8px;
 }
@@ -113,7 +113,7 @@ a:hover {
 }
 
 a::before {
-	content: '❤';
+	content: '🚀';
 	position: absolute;
 	left: -20px;
 	opacity: 0;

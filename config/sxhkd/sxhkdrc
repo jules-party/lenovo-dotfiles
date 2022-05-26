@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	kitty
+	urxvt
 
 # program launcher
 
-super + w
+alt + Tab
         rofi -show window
 
 super + shift + c
@@ -17,15 +17,12 @@ super + shift + c
 super + shift + e
         rofi -show emoji
 
-super + d
+super + @space
         rofi -show run -show-icons
 
-super + @space
-        rofi -modi drun -show drun -show-icons
+super + d
+        rofi -show drun -show-icons
  
-super + r
-        reddit
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -106,8 +103,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+super + grave
+	bspc node -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}

@@ -1,9 +1,9 @@
 #!/bin/sh
 
-picom -b
+picom -b &
 exec dunst &
-$HOME/.local/bin/setbg -l &
+nitrogen --set-scaled /home/jule/.wallpapers/wallhaven-426m79.jpg
 
 xsetroot -cursor_name left_ptr &
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+xrdb ~/.Xresources
 exec bspwm
