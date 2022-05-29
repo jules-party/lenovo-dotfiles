@@ -5,6 +5,7 @@
 #
 
 oh-my-posh init fish --config ~/.poshthemes/rudolfs-light.omp.json | source
+zoxide init fish | source
 neofetch --size 300
 set     fish_greeting
 set     fish_color_command white
@@ -25,7 +26,15 @@ function fish_title
     echo (fish_prompt_pwd_dir_length=1 prompt_pwd): $argv;
 end
 
-sh -c "$(export FZF_DEFAULT_OPTS=' --height 13')"
-
+sh -c "$(export FZF_DEFAULT_OPTS=' 
+--height 13
+--color fg:#6c605a,bg:#e6dad6
+--color bg+:#dad3d0,fg+:#685c56
+--color pointer:#937f74,info:#937f74
+')"
 # chips
 if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
+
+# Generated for envman. Do not edit.
+test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.fish"
+
