@@ -1,0 +1,26 @@
+/* CSS variables
+   in the Everblush color scheme */
+:root {
+    /* Special */
+    --background: #e6dad6;
+    --foreground: #6c605a;
+    --cursor:     #937f74;
+
+    /* Colors */
+    --color0:   #e6dad6; 
+    --color1:   #ce9c85;
+    --color2:   #839773;
+    --color3:   #a09c80;
+    --color4:   #8f8678;
+    --color5:   #9c7b9c;
+    --color6:   #75998e;
+    --color7:   #685c56;
+    --color8:   #dad3d0; 
+    --color9:   #ce9c85;
+    --color10:  #839773;
+    --color11:  #a09c80;
+    --color12:  #8f8678;
+    --color13:  #9c7b9c;
+    --color14:  #75998e;
+    --color15:  #938680;
+}

@@ -23,6 +23,10 @@ super + @space
 super + d
         rofi -show drun -show-icons
 
+# browser
+super + b
+        firefox
+
 # misc
 
 alt + shift + r

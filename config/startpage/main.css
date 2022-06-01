@@ -2,25 +2,24 @@
    in the Everblush color scheme */
 :root {
     /* Special */
-    --background: #e6dad6;
-    --foreground: #6c605a;
-    --cursor:     #937f74;
+    --background: #14161B;
+    --foreground: #DDDDDD;
 
-    /* Colors */
-    --color0:   #e6dad6; 
-    --color1:   #ce9c85;
-    --color2:   #839773;
-    --color3:   #a09c80;
-    --color4:   #8f8678;
-    --color5:   #9c7b9c;
-    --color6:   #75998e;
-    --color7:   #685c56;
-    --color8:   #dad3d0; 
-    --color9:   #ce9c85;
-    --color10:  #839773;
-    --color11:  #a09c80;
-    --color12:  #8f8678;
-    --color13:  #9c7b9c;
-    --color14:  #75998e;
-    --color15:  #938680;
+    /* colors */
+    --color0:  #282c34;
+    --color1:  #e06c75;
+    --color2:  #98c379;
+    --color3:  #e5c07b;
+    --color4:  #61afef;
+    --color5:  #be5046;
+    --color6:  #56b6c2;
+    --color7:  #979eab;
+    --color8:  #393e48;
+    --color9:  #d19a66;
+    --color10: #56b6c2;
+    --color11: #e5c07b;
+    --color12: #61afef;
+    --color13: #be5046;
+    --color14: #56b6c2;
+    --color15: #abb2bf;
 }

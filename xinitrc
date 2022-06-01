@@ -2,7 +2,7 @@
 
 picom -b &
 exec dunst &
-nitrogen --set-scaled /home/jule/.wallpapers/wallhaven-426m79.jpg
+nitrogen --set-scaled /home/jule/.wallpapers/arch.png
 
 xsetroot -cursor_name left_ptr &
 xrdb ~/.Xresources

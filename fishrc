@@ -4,7 +4,7 @@
 # ~/.fishrc
 #
 
-oh-my-posh init fish --config ~/.poshthemes/rudolfs-light.omp.json | source
+#oh-my-posh init fish --config ~/.poshthemes/jule-light.omp.json | source
 zoxide init fish | source
 neofetch --size 300
 set     fish_greeting
@@ -12,14 +12,16 @@ set     fish_color_command white
 set -gx EDITOR vim
 set -gx VISUAL vim
 set -gx BROWSER /usr/bin/firefox
-set -U SXHKD_SHELL sh
+set -U  SXHKD_SHELL sh
+set -g  DESKTOP_SESSION bspwm
 
 alias ls "lsd"
 alias ll "lsd -l"
 alias la "lsd -A"
 
-alias gcl      "git clone"
-alias neofetch "neofetch --size 300"
+alias gcl       "git clone"
+alias neofetch  "neofetch --size 300"
+alias mirrorupd "sudo reflector --verbose -c 'United States' -c Mexico -c Canada --sort rate --save /etc/pacman.d/mirrorlist"
 
 function fish_title
     set -q argv[1]; or set argv fish
@@ -28,9 +30,9 @@ end
 
 sh -c "$(export FZF_DEFAULT_OPTS=' 
 --height 13
---color fg:#6c605a,bg:#e6dad6
---color bg+:#dad3d0,fg+:#685c56
---color pointer:#937f74,info:#937f74
+--color fg:#dddddd,bg:#14161B
+--color bg+:#282C34,fg+:#979EAB
+--color pointer:#E06C75,info:#98C379
 ')"
 # chips
 if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end

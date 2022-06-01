@@ -1,27 +1,30 @@
-@value --color0 from  "./colors.css";
-@value --color1 from  "./colors.css";
-@value --color2 from  "./colors.css";
-@value --color0 from  "./colors.css";
-@value --color4 from  "./colors.css";
-@value --color5 from  "./colors.css";
-@value --color6 from  "./colors.css";
-@value --color7 from  "./colors.css";
-@value --color8 from  "./colors.css";
-@value --color9 from  "./colors.css";
-@value --color10 from "./colors.css";
-@value --color11 from "./colors.css";
-@value --color12 from "./colors.css";
-@value --color13 from "./colors.css";
-@value --color14 from "./colors.css";
-@value --color15 from "./colors.css";
+@value --background from "./main.css";
+@value --foreground from "./main.css";
+
+@value --color0 from  "./main.css";
+@value --color1 from  "./main.css";
+@value --color2 from  "./main.css";
+@value --color0 from  "./main.css";
+@value --color4 from  "./main.css";
+@value --color5 from  "./main.css";
+@value --color6 from  "./main.css";
+@value --color7 from  "./main.css";
+@value --color8 from  "./main.css";
+@value --color9 from  "./main.css";
+@value --color10 from "./main.css";
+@value --color11 from "./main.css";
+@value --color12 from "./main.css";
+@value --color13 from "./main.css";
+@value --color14 from "./main.css";
+@value --color15 from "./main.css";
 @font-face { font-family: "Sarasa Gothic K"; src: url("./assets/sarasa-gothic-k-regular.ttf"); }
 @font-face { font-family: "Sarasa Gothic K Bold"; src: url("./assets/sarasa-gothic-k-semibold.ttf"); }
 
 html, body {
 	margin: 0;
 	padding: 0;
-	background: var(--color0);
-	color: var(--color15);
+	background: var(--background);
+	color: var(--foreground);
 	font-family: "Sarasa Gothic K";
 }
 
@@ -48,7 +51,7 @@ h1 {
 	padding: 16px;
 	position: relative;
 	border-radius: 8px;
-	background-color: var(--color8);
+	background-color: var(--color0);
 }
 
 .term::before {
@@ -58,7 +61,7 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: var(--color8);
+	background-color: var(--color0);
 	z-index: -2;
 	border-radius: 8px;
 }
@@ -89,16 +92,16 @@ a {
 	font-size: 14px;
 	font-weight: normal;
 	text-decoration: none;
-	color: var(--color15);
+	color: var(--foreground);
 	position: relative;
 	padding: 0;
 	transition: padding .3s;
 }
 
 #searchbar {
-	background-color: var(--color8);
+	background-color: var(--color0);
         border-radius: 8px;
-	color: var(--color15);
+	color: var(--color7);
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 5px;

@@ -1,5 +1,6 @@
 #! /bin/sh
 
+DESKTOP_SESSION="bspwm"
 ~/.config/polybar/launch.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
 

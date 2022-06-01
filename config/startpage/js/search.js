@@ -22,12 +22,18 @@ function search(event) {
             	case "img":
             		url = "https://www.google.com/search?tbm=isch&q=" + query;
             		break;
-				case "wiki":
-					url = "https://en.wikipedia.org/wiki/" + query;
-					break;
+
+	        case "wiki":
+			url = "https://en.wikipedia.org/wiki/" + query;
+			break;
+
+		case "sub":
+			url = "https://old.reddit.com/r/" +query;
+			break;
+
             	default:
-					url = "index.html";
-					break;
+			url = "index.html";
+			break;
             }
 
         } else { 
