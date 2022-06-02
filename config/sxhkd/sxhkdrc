@@ -29,6 +29,9 @@ super + b
 
 # misc
 
+super + alt + s
+        spotify
+
 alt + shift + r
         firefox https://old.reddit.com 
 
