@@ -1,7 +1,7 @@
 # dotfiles
 my personal dotfiles for my lenovo laptop
 
-[find my scripts here](https://github.com/jules-party/scripts)
+[find my scripts here](https://github.com/jules-party/bin)
 
 ## distro, and etc
 i run arch linux with bspwm + polybar:)
